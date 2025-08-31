@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SDK EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("UAtEchVdarfgxBD0b"); // 🔑 Sua Public Key
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre Mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Entre em contato</h1>
+    <form id="contact-form">
+      <label for="user_name">Nome:</label>
+      <input type="text" id="user_name" name="user_name" placeholder="Seu nome" required>
+
+      <label for="user_email">E-mail:</label>
+      <input type="email" id="user_email" name="user_email" placeholder="Seu e-mail" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Script para envio -->
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = this;
+
+    emailjs.sendForm('*Casa2025', 'template_18acopq', form)
+      .then(function() {
+        alert('✅ Mensagem enviada com sucesso!');
+        form.reset(); // Limpa os campos
+      }, function(error) {
+        alert('❌ Erro ao enviar: ' + JSON.stringify(error));
+        form.reset(); // Também limpa os campos em caso de erro
+      });
+  });
+</script>
+
+</body>
+</html>

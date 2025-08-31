@@ -1,0 +1,193 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menu */
+nav {
+    background: #222;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+/* Estrutura */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgb(201, 200, 200);
+    border-radius: 8px;
+    position: relative;
+    top: 80px; /* ajuste esse valor para subir a caixa */
+}
+*/z
+
+
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+button {
+    background: #00bfff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #0099cc;
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column; /* muda para coluna */
+    align-items: center;    /* centraliza tudo */
+    margin-top: 80px auto;      /* bem próximo do menu */
+    gap: 15px;              /* espaço entre foto e caixa */
+}
+
+.foto-perfil {
+    width: 200px;
+    border-radius: 20%;
+}
+
+.caixa {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+/* ======== FORMULÁRIO DE CONTATO ======== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+form label {
+  font-weight: bold;
+  color: #222;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 6px rgba(0,191,255,0.4);
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  padding: 12px;
+  background: #00bfff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #0099cc;
+  transform: scale(1.03);
+}
+
+/* Fonte moderna (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* fonte nova */
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Caixa central */
+.caixa {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Layout da seção sobre mim */
+.sobre-mim {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Foto */
+.foto-perfil {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Texto */
+.texto {
+  flex: 1;
+}
+
+.texto h2 {
+  margin-top: 0;
+  color: #222;
+  font-weight: 700;
+}
+
+.texto p {
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 300;
+}
+
+
+
+
+
